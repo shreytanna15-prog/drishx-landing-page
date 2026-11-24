@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="relative flex min-h-[calc(100vh-5rem)] w-full items-center overflow-hidden border-b border-[#F0A132]/10 px-6 py-16 lg:px-12 lg:py-24">
       {/* Caustic Ambient Glows */}
       <div className="pointer-events-none absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-[#F0A132]/10 blur-[140px]" />
-      <div className="pointer-events-none absolute right-1/4 bottom-10 h-[480px] w-[480px] rounded-full bg-[#F0A132]/[0.07] blur-[160px]" />
+      <div className="pointer-events-none absolute right-1/4 bottom-10 h-120 w-120 rounded-full bg-[#F0A132]/[0.07] blur-[160px]" />
 
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-14">
         {/* Left (~55%): Hero Pitch */}
@@ -50,9 +50,9 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right (~45%): Cinematic Optical Glass Showcase with Doodle Mascot */}
+        {/* Right (~45%): Cinematic Optical Glass Showcase */}
         <div className="relative flex items-center justify-center lg:col-span-5">
-          <div className="optical-reticle shadow-lens-glow relative flex h-[480px] w-full max-w-[440px] flex-col items-center justify-between overflow-hidden rounded-3xl border border-[#F0A132]/20 bg-[#0F1620]/90 p-7 backdrop-blur-xl">
+          <div className="optical-reticle shadow-lens-glow relative flex h-120 w-full max-w-110 flex-col items-center justify-between overflow-hidden rounded-3xl border border-[#F0A132]/20 bg-[#0F1620]/90 p-7 backdrop-blur-xl">
             {/* Shimmer Overlay */}
             <div className="lens-shimmer pointer-events-none absolute inset-0 opacity-60" />
 
@@ -67,7 +67,7 @@ export function HeroSection() {
               </span>
             </div>
 
-            {/* Optical Centerpiece with DrishX Doodle Mascot */}
+            {/* Optical Centerpiece */}
             <div className="relative my-auto flex h-64 w-64 items-center justify-center">
               {/* Outer Diopter Ring */}
               <div className="absolute inset-0 flex items-center justify-center rounded-full border border-[#F0A132]/25">
@@ -78,7 +78,17 @@ export function HeroSection() {
               {/* Refractive Highlight Arc */}
               <div className="absolute top-6 left-10 h-12 w-24 -rotate-12 rounded-full border-t-2 border-l border-[#F0A132]/70 blur-[0.5px]" />
 
-              {/* Hand-Drawn Doodle Lens Mascot SVG */}
+              {/* Doodle Placeholder Text */}
+              <div className="relative z-20 flex flex-col items-center justify-center text-center">
+                <span className="font-mono text-xs font-semibold tracking-wider text-[#F0A132] uppercase">
+                  Doodle will be here
+                </span>
+                <span className="mt-1 text-[11px] text-[#AAB2C0]/60">
+                  Animated Lens Character Slot
+                </span>
+              </div>
+
+              {/*
               <svg
                 aria-label="DrishX Doodle Mascot"
                 className="relative z-20 h-48 w-48"
@@ -86,7 +96,6 @@ export function HeroSection() {
                 viewBox="0 0 200 200"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {/* Lens Body */}
                 <circle
                   cx="100"
                   cy="100"
@@ -96,14 +105,12 @@ export function HeroSection() {
                   stroke="#F0A132"
                   strokeWidth="2.5"
                 />
-                {/* Internal Curvature Highlight */}
                 <path
                   d="M72 70 A 42 42 0 0 1 128 70"
                   stroke="rgba(240, 161, 50, 0.45)"
                   strokeLinecap="round"
                   strokeWidth="2"
                 />
-                {/* Doodle Trial Frame Glasses */}
                 <g stroke="#EAF0FA" strokeLinecap="round" strokeWidth="2.2">
                   <circle cx="83" cy="95" r="14" stroke="#EAF0FA" />
                   <circle cx="117" cy="95" r="14" stroke="#EAF0FA" />
@@ -111,19 +118,16 @@ export function HeroSection() {
                   <line x1="69" x2="65" y1="95" y2="95" />
                   <line x1="131" x2="135" y1="95" y2="95" />
                 </g>
-                {/* Expressive Doodle Eyes */}
                 <circle cx="83" cy="95" fill="#F0A132" r="3.5" />
                 <circle cx="117" cy="95" fill="#F0A132" r="3.5" />
                 <circle cx="81.5" cy="93.5" fill="#FFFFFF" r="1" />
                 <circle cx="115.5" cy="93.5" fill="#FFFFFF" r="1" />
-                {/* Smile */}
                 <path
                   d="M92 118 Q 100 126 108 118"
                   stroke="#F0A132"
                   strokeLinecap="round"
                   strokeWidth="2.6"
                 />
-                {/* Stick Arms */}
                 <path
                   d="M46 108 Q 32 94 36 78"
                   stroke="#AAB2C0"
@@ -143,7 +147,6 @@ export function HeroSection() {
                   strokeLinecap="round"
                   strokeWidth="2.4"
                 />
-                {/* Arm holding Loupe */}
                 <path
                   d="M154 108 Q 166 116 172 102"
                   stroke="#AAB2C0"
@@ -162,6 +165,7 @@ export function HeroSection() {
                   y2="108"
                 />
               </svg>
+              */}
 
               {/* Axis indicator */}
               <span className="absolute bottom-3 font-mono text-[10px] tracking-widest text-[#F0A132]/80">
@@ -169,13 +173,13 @@ export function HeroSection() {
               </span>
             </div>
 
-            {/* Bottom Slot Label */}
-            <div className="z-10 flex w-full items-center justify-between border-t border-white/[0.06] pt-3">
+            {/* Bottom Details (Replaced with business/optical credentials) */}
+            <div className="z-10 flex w-full items-center justify-between border-t border-white/6 pt-3">
               <span className="font-mono text-[11px] tracking-wider text-[#AAB2C0] uppercase">
-                [ ANIMATED DOODLE LENS CHARACTER ]
+                [ FACTORY DIRECT FULFILLMENT ]
               </span>
               <span className="rounded-md border border-[#F0A132]/30 bg-[#F0A132]/15 px-2.5 py-1 font-mono text-[10px] text-[#F0A132]">
-                Mascot &amp; Refraction Slot
+                Instant Dispatch Ready
               </span>
             </div>
           </div>

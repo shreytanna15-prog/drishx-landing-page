@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className="flex min-h-screen flex-col bg-[#0B0F14] text-[#EAF0FA]">
       <Navbar />
-      <main className="w-full pt-20">
+      <main className="w-full pt-16">
         <HeroSection />
         <CatalogSection />
         <TransitSection />
